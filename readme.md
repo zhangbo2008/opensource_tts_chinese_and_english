@@ -1,6 +1,6 @@
 tts:
-chinese_tts
-english_tts
+chinese_tts.py
+english_tts.py
 
 
 

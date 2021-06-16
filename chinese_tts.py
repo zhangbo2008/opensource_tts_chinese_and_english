@@ -4,6 +4,12 @@ import yaml
 
 import tensorflow as tf
 
+# 我说明一下tts的逻辑:
+# 这个项目首先需要 文字转编码, 用 processor
+# 然后 编码啊转mel序列. 用fastspeech2
+# 最后mel序列转语音 用model = TFAutoModel.from_pretrained("tensorspeech/tts-mb_melgan-baker-ch")
+
+
 from tensorflow_tts.inference import AutoProcessor
 from tensorflow_tts.inference import TFAutoModel
 
