@@ -19,7 +19,7 @@ from tensorflow_tts.inference import TFAutoModel
 
 model = TFAutoModel.from_pretrained("tensorspeech/tts-mb_melgan-baker-ch")
 
-text = "这是一个开源的端到端中文语音合成系统"
+text = "你好呀"
 
 input_ids = processor.text_to_sequence(text, inference=True)
 
